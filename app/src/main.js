@@ -11,18 +11,12 @@ const handleKeydown = (e) => {
   key.classList.add('playing');
   audio.currentTime = 0;
   audio.play();
-
 };
 
 const handleTransition = (e) => {
-  console.log(e);
   if (e.propertyName !== 'transform') return;
   e.target.classList.remove('playing');
 }
-
-// const keys = [...getAllEl('.key')]
-
-
 
 const main = () => {
   

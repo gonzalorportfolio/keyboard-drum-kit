@@ -40,11 +40,11 @@
   <audio data-key="65" src="./assets/sounds/clap.wav"></audio>
   <audio data-key="83" src="./assets/sounds/hihat.wav"></audio>
   <audio data-key="68" src="./assets/sounds/kick.wav"></audio>
-  <audio data-key="70" src="./assets/soundsopenhat.wav"></audio>
+  <audio data-key="70" src="./assets/sounds/openhat.wav"></audio>
   <audio data-key="71" src="./assets/sounds/boom.wav"></audio>
   <audio data-key="72" src="./assets/sounds/ride.wav"></audio>
   <audio data-key="74" src="./assets/sounds/snare.wav"></audio>
   <audio data-key="75" src="./assets/sounds/tom.wav"></audio>
   <audio data-key="76" src="./assets/sounds/tink.wav"></audio>
  
-  `},c=e=>{const d=n(`audio[data-key="${e.keyCode}"]`),t=n(`div[data-key="${e.keyCode}"]`);d&&(t.classList.add("playing"),d.currentTime=0,d.play())},u=e=>{console.log(e),e.propertyName==="transform"&&e.target.classList.remove("playing")},l=()=>{r(),Array.from(document.querySelectorAll(".key")).forEach(d=>d.addEventListener("transitionend",u)),document.addEventListener("keydown",c)};l();
+  `},c=e=>{const d=n(`audio[data-key="${e.keyCode}"]`),t=n(`div[data-key="${e.keyCode}"]`);d&&(t.classList.add("playing"),d.currentTime=0,d.play())},u=e=>{e.propertyName==="transform"&&e.target.classList.remove("playing")},l=()=>{r(),Array.from(document.querySelectorAll(".key")).forEach(d=>d.addEventListener("transitionend",u)),document.addEventListener("keydown",c)};l();
